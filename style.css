@@ -1,0 +1,230 @@
+/*layout */
+body {
+  margin: 0;
+  display: grid;
+  grid-template-areas:
+    "header-cell"
+    "nav-cell"
+    "main-cell"
+    "footer-cell";
+  background-color: #54b8704d;
+}
+
+nav {
+  grid-area: nav-cell;
+}
+footer {
+  grid-area: footer-cell;
+}
+#logo {
+  height: 50px;
+}
+header {
+  margin-top: 0;
+  margin-bottom: 2px;
+  border: 1px solid #ccc7c8;
+  border-radius: 5px;
+  padding: 0px 5px;
+  grid-area: header-cell;
+  background-image: url("/img/headerimg.jpg");
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+}
+nav a {
+  top: 0px;
+  float: left;
+  margin: 3px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 2px 4px;
+  height: 20px;
+  text-align: center;
+  color: #063313e0;
+  line-height: 17px;
+  background-color: #ffffff80;
+  text-decoration: none;
+}
+nav > a:hover {
+  color: #fff;
+  background-color: rgb(231, 80, 80);
+}
+.fa-search {
+  margin-right: 5px;
+  float: right;
+  padding: 4px;
+  border-radius: 5px;
+  border: 1px solid #ffffff80;
+  min-width: 30px;
+  color: red;
+  text-align: center;
+  background-color: rgba(36, 55, 196, 0.708);
+  cursor: pointer;
+}
+.fa-shopping-cart {
+  float: right;
+  padding: 4px;
+  min-width: 30px;
+  color: #f4f4f4;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #ffffff80;
+  background-color: rgba(36, 55, 196, 0.708);
+  cursor: pointer;
+}
+header div input {
+  height: 24px;
+  float: right;
+  padding: 3px;
+  box-sizing: border-box;
+  border: 1px solid #ffffff80;
+  border-radius: 2px;
+}
+/* #top_png {
+  position: fixed;
+  bottom: 0px;
+  right: 5px;
+  padding: 10px;
+  background-image: url("images/top.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 40px;
+  z-index: 100;
+}*/
+/* #footer_img {
+  height: 60px;
+  text-align: center;
+}
+#footer_col1 {
+  float: left;
+  position: ;
+}
+#footer_col2 {
+  float: right;
+} */
+
+footer {
+  background-image: url(/img/backgroundcolor.jpeg);
+  color: white;
+  padding: 20px 5px; /* Tăng padding phía trên/dưới */
+  width: 100%;
+  margin-top: 50px; /* Thêm khoảng cách với nội dung phía trên */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Đổi từ center thành flex-start */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-info {
+  text-align: center; /* Căn giữa nội dung */
+}
+
+#footer_img {
+  width: 100px; /* Chiều rộng hình ảnh */
+  height: auto; /* Tự động điều chỉnh chiều cao */
+  margin-bottom: 10px; /* Khoảng cách dưới hình ảnh */
+}
+
+.footer-title {
+  font-weight: bold; /* Đậm tiêu đề */
+  font-size: 18px; /* Kích thước chữ tiêu đề */
+  margin: 5px 0; /* Khoảng cách trên và dưới tiêu đề */
+}
+
+.footer-contact {
+  text-align: left; /* Căn trái nội dung */
+}
+
+.footer-contact p {
+  margin: 5px 0; /* Khoảng cách giữa các đoạn văn */
+}
+
+.footer-contact a {
+  color: #ffa500; /* Màu liên kết */
+  text-decoration: none; /* Bỏ gạch chân */
+}
+
+.footer-contact a:hover {
+  text-decoration: underline; /* Gạch chân khi hover */
+}
+
+.social-links {
+  margin-top: 10px; /* Khoảng cách trên cho các liên kết mạng xã hội */
+}
+
+.social-links a {
+  color: #ffa500; /* Màu chữ cho liên kết */
+  margin-right: 15px; /* Khoảng cách giữa các liên kết */
+  text-decoration: none; /* Bỏ gạch chân */
+}
+
+main {
+  display: flex;
+  justify-content: center; /* Căn giữa phần đăng ký */
+  align-items: center;
+  padding: 20px 0;
+}
+#huy {
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  width: 60px;
+}
+.dangky {
+  color: white;
+  background-color: #1c8b05e0;
+  border-radius: 5px;
+  width: 100px;
+}
+.dangky_huy {
+  text-align: center;
+}
+.dangky:hover {
+  background-color: #063313;
+}
+#huy:hover {
+  background-color: #b40f0f;
+}
+#return {
+  position: fixed; /* Đặt vị trí cố định */
+  right: 20px; /* Khoảng cách từ bên phải */
+  bottom: 20px; /* Khoảng cách từ dưới lên */
+  z-index: 1000; /* Đảm bảo nó nằm trên các phần tử khác */
+}
+.fieldset {
+  padding: auto;
+
+}
+.input {
+  width: 100%;
+}
+
+/* Điều chỉnh container chính */
+.sanpham {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+  min-height: calc(100vh - 400px); /* Đảm bảo nội dung đủ cao */
+}
+
+/* Xóa bỏ padding-bottom cho body vì không còn cần thiết */
+.body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Điều chỉnh main content */
+main {
+  flex: 1;
+  padding: 20px 0;
+}
